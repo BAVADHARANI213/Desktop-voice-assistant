@@ -11,6 +11,9 @@ voices = engine.getProperty('voices')
 # print(voices[1].id) : voice ZARA
 engine.setProperty('voice', voices[0].id)
 
+rate = engine.getProperty('rate')
+engine.setProperty('rate',180)
+#print(rate) 
 
 def speak(audio):
     engine.say(audio)
